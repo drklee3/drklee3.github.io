@@ -5,15 +5,18 @@ var app = new Vue({
 			"JavaScript",
 			"Node.js",
 			"Python",
-			"C++"
+			"C++",
+			"Adobe After Effects",
+			"Adobe Photoshop"
 		],
 		projects: [
 			{
 				title: 'headphone-recommender',
-				description: 'Takes in a mp3 song and recommends 100+ headphones based on price, form factor, \
-				and sound signature (bassy, neutral, mid, v-shaped). Uses the Fourier Transform and Welch\'s method \
+				description: 'Recommends 100+ headphones based on price, form factor, \
+				and sound signature based on mp3 upload. Uses the Fourier Transform and Welch\'s method \
 				on the mp3 to generate a spectral density estimation of the song, then classifies it and returns a list of headphones for the user.',
 				links: {
+					Website: 'https://headphone-recommender.herokuapp.com',
 					GitHub: 'https://github.com/jonfung/headphone-recommender'
 				},
 				tech: [
