@@ -1,3 +1,7 @@
 header {
 	margin-top: 6rem;
 }
+
+.chip, .btn {
+	margin-right: 5px !important;
+}

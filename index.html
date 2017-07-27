@@ -10,30 +10,58 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/spectre.min.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
+	<script src="https://unpkg.com/vue"></script>
+	<script src="https://use.fontawesome.com/8e03661ce2.js"></script>
 </head>
 <body>
-	<div class="container grid-960">
+	<div class="container grid-960" id="app">
 		<div class="columns">
-			<div class="col-12">
+			<div class="column col-12">
 				<header>
 					<h3>Derrick Lee</h3>
 				</header>
 				<h4>About</h4>
+				<p>I am an undergraduate student at Santa Clara University studying computer science.</p>
+				<h4>Skills</h4>
+				<label class="chip" v-for="skill in skills">{{ skill }}</label>
+				<div class="divider"></div>
 				<h4>Projects</h4>
-				<a href="https://github.com/jonfung/headphone-recommender">headphone-recommender</a>
-				<p>Takes in a mp3 song and recommends 100+ headphones based on price, form factor, and sound signature (bassy, neutral, mid, v-shaped). Uses the Fourier Transform and Welch's method on the mp3 to generate a spectral density estimation of the song, then classifies it and returns a list of headphones for the user.</p>
-				<a href="https://github.com/drklee3/vlive-dl">vlive-dl</a>
-				<p>Command line tool that downloads VLive videos & subtitles, converts the subtitles to .srt, and merges them into an MKV file.</p>
-				<a href="https://github.com/drklee3/ApliaTotalGrade">ApliaTotalGrade</a>
-				<p>Tampermonkey script to show total grade for Aplia.com</p>
-				
-				<h4>Links</h4>
-				<a href="#">Resume</a>
-				<a href="#">Email</a>
-				<a href="https://github.com/drklee3">Github</a>
-				<a href="#">LinkedIn</a>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="column col-4 col-sm-12" v-for="proj in projects">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="card-title">{{ proj.title }}</h4>
+					</div>
+					<div class="card-body">{{ proj.description }}</div>
+					<div class="card-footer">
+						<a v-bind:href="value" v-for="(value, key) in proj.links"
+						class="btn btn-sm" v-bind:class="{ 'btn-primary': isGithub(key) }"
+						target="_blank">{{ key }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="columns">
+			<div class="column col-12">
+				<div class="divider"></div>
+				<a href="#" class="btn btn-action" target="_blank">
+					<i class="fa fa-file-text" aria-hidden="true"></i>
+				</a>
+				<a href="#" class="btn btn-action" target="_blank">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</a>
+				<a href="https://github.com/drklee3" class="btn btn-action" target="_blank">
+					<i class="fa fa-github-alt" aria-hidden="true"></i>
+				</a>
+				<a href="#" class="btn btn-action" target="_blank">
+					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				</a>
 			</div>
 		</div>
 	</div>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
