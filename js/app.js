@@ -14,7 +14,7 @@ var app = new Vue({
 				and sound signature (bassy, neutral, mid, v-shaped). Uses the Fourier Transform and Welch\'s method \
 				on the mp3 to generate a spectral density estimation of the song, then classifies it and returns a list of headphones for the user.',
 				links: {
-					github: 'https://github.com/jonfung/headphone-recommender'
+					GitHub: 'https://github.com/jonfung/headphone-recommender'
 				},
 				tech: [
 					'python',
@@ -27,7 +27,7 @@ var app = new Vue({
 				title: 'vlive-dl',
 				description: 'Command line tool that downloads and merges VLive videos & subtitles.',
 				links: {
-					github: 'https://github.com/drklee3/vlive-dl',
+					GitHub: 'https://github.com/drklee3/vlive-dl',
 					npm: 'https://www.npmjs.com/package/vlive-dl',
 				},
 				tech: [
@@ -38,7 +38,7 @@ var app = new Vue({
 				title: 'ApliaTotalGrade',
 				description: 'Tampermonkey script to show total grade for Aplia.com',
 				links: {
-					github: 'https://github.com/drklee3/ApliaTotalGrade'
+					GitHub: 'https://github.com/drklee3/ApliaTotalGrade'
 				},
 				tech: [
 					'JavaScript'
@@ -48,7 +48,7 @@ var app = new Vue({
 	},
 	methods: {
 		isGithub: function(test) {
-			return test == 'github';
+			return test == 'GitHub';
 		}
 	}
 })
