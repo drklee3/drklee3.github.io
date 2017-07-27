@@ -11,6 +11,10 @@ var app = new Vue({
 				icon: "devicon-nodejs-plain"
 			},
 			{
+				name: "Vue.js",
+				icon: "devicon-vuejs-plain"
+			},
+			{
 				name: "Python",
 				icon: "devicon-python-plain"
 			},

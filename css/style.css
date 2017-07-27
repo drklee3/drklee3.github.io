@@ -5,3 +5,7 @@ header {
 .chip, .btn, .skill-icon {
 	margin-right: 5px !important;
 }
+
+h4 {
+	margin-bottom: 0px;
+}
