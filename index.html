@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/spectre.min.css">
+	<link rel="stylesheet" href="css/devicon.min.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
 	<script src="https://unpkg.com/vue"></script>
 	<script src="https://use.fontawesome.com/8e03661ce2.js"></script>
@@ -21,8 +22,11 @@
 					<h2>Derrick Lee</h2>
 				</header>
 				<p>Undergraduate student at Santa Clara University studying computer science.</p>
-				<h4>Skills</h4>
-				<label class="chip" v-for="skill in skills">{{ skill }}</label>
+				<h4>Skills and Experience</h4>
+				<label class="chip" v-for="skill in skills">
+					<i class="skill-icon" v-bind:class="skill.icon"></i>
+					{{ skill.name }}
+				</label>
 				<div class="divider"></div>
 				<h4>Projects</h4>
 			</div>

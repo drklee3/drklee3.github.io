@@ -2,12 +2,30 @@ var app = new Vue({
 	el: '#app',
 	data: {
 		skills: [
-			"JavaScript",
-			"Node.js",
-			"Python",
-			"C++",
-			"Adobe After Effects",
-			"Adobe Photoshop"
+			{
+				name: "JavaScript",
+				icon: "devicon-javascript-plain"
+			},
+			{
+				name: "Node.js",
+				icon: "devicon-nodejs-plain"
+			},
+			{
+				name: "Python",
+				icon: "devicon-python-plain"
+			},
+			{
+				name: "C++",
+				icon: "devicon-cplusplus-plain"
+			},
+			{
+				name: "Adobe After Effects",
+				icon: ""
+			},
+			{
+				name: "Adobe Photoshop",
+				icon: "devicon-photoshop-plain"
+			}
 		],
 		projects: [
 			{
