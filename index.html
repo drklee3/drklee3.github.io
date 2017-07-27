@@ -3,10 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Derrick Lee</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Computer Science major at Santa Clara University">
+	<meta name="author" content="Derrick Lee">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/spectre.min.css">
 	<link rel="stylesheet" href="css/devicon.min.css">
@@ -21,13 +20,14 @@
 				<header>
 					<h2>Derrick Lee</h2>
 				</header>
-				<p>Undergraduate student at Santa Clara University studying computer science.</p>
-				<h4>Skills and Experience</h4>
-				<label class="chip" v-for="skill in skills">
-					<i class="skill-icon" v-bind:class="skill.icon"></i>
-					{{ skill.name }}
-				</label>
-				<div class="divider"></div>
+				<p>Computer Science major at Santa Clara University.</p>
+				<div class="section">
+					<h4>Skills and Experience</h4>
+					<label class="chip" v-for="skill in skills">
+						<i class="skill-icon" v-bind:class="skill.icon"></i>
+						{{ skill.name }}
+					</label>
+				</div>
 				<h4>Projects</h4>
 			</div>
 		</div>
@@ -46,21 +46,11 @@
 				</div>
 			</div>
 		</div>
-		
 		<div class="columns">
 			<div class="column col-12">
-				<div class="divider"></div>
-				<a href="#" class="btn btn-action tooltip" data-tooltip="Resume" target="_blank">
-					<i class="fa fa-file-text" aria-hidden="true"></i>
-				</a>
-				<a href="mailto:derricklee98@gmail.com" class="btn btn-action tooltip" data-tooltip="Email Me" target="_blank">
-					<i class="fa fa-envelope" aria-hidden="true"></i>
-				</a>
-				<a href="https://github.com/drklee3" class="btn btn-action tooltip" data-tooltip="GitHub" target="_blank">
-					<i class="fa fa-github-alt" aria-hidden="true"></i>
-				</a>
-				<a href="www.linkedin.com/in/drklee" class="btn btn-action tooltip" data-tooltip="LinkedIn" target="_blank">
-					<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<h4>Contact</h4>
+				<a v-bind:href="link.href" class="btn btn-action btn-lg tooltip" v-bind:data-tooltip="link.title" target="_blank" v-for="link in contact">
+					<i class="fa" v-bind:class="link.icon" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>

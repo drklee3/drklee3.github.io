@@ -38,8 +38,8 @@ var app = new Vue({
 				and sound signature based on mp3 upload. Uses the Fourier Transform and Welch\'s method \
 				on the mp3 to generate a spectral density estimation of the song, then classifies it and returns a list of headphones for the user.',
 				links: {
-					Website: 'https://headphone-recommender.herokuapp.com',
-					GitHub: 'https://github.com/jonfung/headphone-recommender'
+					GitHub: 'https://github.com/jonfung/headphone-recommender',
+					Website: 'https://headphone-recommender.herokuapp.com'
 				},
 				tech: [
 					'python',
@@ -68,6 +68,28 @@ var app = new Vue({
 				tech: [
 					'JavaScript'
 				]
+			}
+		],
+		contact: [
+			{
+				title: 'Resume',
+				href: '#',
+				icon: 'fa-file-text'
+			},
+			{
+				title: 'Email Me',
+				href: 'mailto:derricklee98@gmail.com',
+				icon: 'fa-envelope'
+			},
+			{
+				title: 'GitHub',
+				href: 'https://github.com/drklee3',
+				icon: 'fa-github-alt'
+			},
+			{
+				title: 'LinkedIn',
+				href: 'www.linkedin.com/in/drklee',
+				icon: 'fa-linkedin'
 			}
 		]
 	},
