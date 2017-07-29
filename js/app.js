@@ -63,7 +63,8 @@ var app = new Vue({
 				title: '3D Audio Converter',
 				description: 'Web app using Nuxt.js and ffmpeg to modify songs giving it a "3D" effect using interaural time difference.',
 				links: {
-					GitHub: 'https://github.com/drklee3/3dAC'
+					GitHub: 'https://github.com/drklee3/3dAC',
+					Website: 'https://3d.drklee.me'
 				}
 			},
 			{
