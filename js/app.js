@@ -60,6 +60,13 @@ var app = new Vue({
 				]
 			},
 			{
+				title: '3D Audio Converter',
+				description: 'Web app using Nuxt.js and ffmpeg to modify songs giving it a "3D" effect using interaural time difference.',
+				links: {
+					GitHub: 'https://github.com/drklee3/3dAC'
+				}
+			}
+			{
 				title: 'ApliaTotalGrade',
 				description: 'Tampermonkey script to show total grade for Aplia.com',
 				links: {
