@@ -65,7 +65,7 @@ var app = new Vue({
 				links: {
 					GitHub: 'https://github.com/drklee3/3dAC'
 				}
-			}
+			},
 			{
 				title: 'ApliaTotalGrade',
 				description: 'Tampermonkey script to show total grade for Aplia.com',
