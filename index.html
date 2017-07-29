@@ -21,6 +21,9 @@
 					<h2>Derrick Lee</h2>
 				</header>
 				<p>Computer Science major at Santa Clara University.</p>
+				<a v-bind:href="link.href" class="btn btn-action btn-lg tooltip" v-bind:data-tooltip="link.title" target="_blank" v-for="link in contact">
+					<i class="fa" v-bind:class="link.icon" aria-hidden="true"></i>
+				</a>
 				<div class="section">
 					<h4>Skills and Experience</h4>
 					<label class="chip" v-for="skill in skills">
@@ -44,14 +47,6 @@
 						target="_blank">{{ key }}</a>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="columns">
-			<div class="column col-12">
-				<h4>Contact</h4>
-				<a v-bind:href="link.href" class="btn btn-action btn-lg tooltip" v-bind:data-tooltip="link.title" target="_blank" v-for="link in contact">
-					<i class="fa" v-bind:class="link.icon" aria-hidden="true"></i>
-				</a>
 			</div>
 		</div>
 	</div>
