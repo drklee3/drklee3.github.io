@@ -81,7 +81,7 @@ var app = new Vue({
 		contact: [
 			{
 				title: 'Resume',
-				href: '#',
+				href: './resume.pdf',
 				icon: 'fa-file-text'
 			},
 			{
