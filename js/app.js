@@ -96,7 +96,7 @@ var app = new Vue({
 			},
 			{
 				title: 'LinkedIn',
-				href: 'www.linkedin.com/in/drklee',
+				href: 'https://www.linkedin.com/in/drklee',
 				icon: 'fa-linkedin'
 			}
 		]
