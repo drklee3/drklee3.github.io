@@ -6,50 +6,41 @@
 	<meta name="description" content="Computer Science major at Santa Clara University">
 	<meta name="author" content="Derrick Lee">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/spectre.min.css">
-	<link rel="stylesheet" href="css/devicon.min.css">
+	<link rel="stylesheet" href="style.css">
 	<link rel="icon" type="image/png" href="images/favicon.png">
-	<script src="https://unpkg.com/vue"></script>
-	<script src="https://use.fontawesome.com/8e03661ce2.js"></script>
 </head>
 <body>
-	<div class="container grid-960" id="app">
-		<div class="columns">
-			<div class="column col-12">
-				<header>
-					<h2>Derrick Lee</h2>
-				</header>
-				<p>Computer Science major at Santa Clara University.</p>
-				<a v-bind:href="link.href" class="btn btn-action btn-lg tooltip" v-bind:data-tooltip="link.title" target="_blank" v-for="link in contact">
-					<i class="fa" v-bind:class="link.icon" aria-hidden="true"></i>
-				</a>
-				<div class="section">
-					<h4>Skills and Experience</h4>
-					<label class="chip" v-for="skill in skills">
-						<i class="skill-icon" v-bind:class="skill.icon"></i>
-						{{ skill.name }}
-					</label>
-				</div>
-				<h4>Projects</h4>
-			</div>
+	<div class="container">
+		<div>
+			<h2 class="spaced">Derrick Lee</h2>
+			<p class="subtitle">Computer Science major at Santa Clara University.</p>
+			<ul>
+				<li><a href="./resume.pdf" target="_blank">Resume</a></li>
+				<li><a href="mailto:dlee3@scu.edu" target="_blank">Email</a></li>
+				<li><a href="https://github.com/drklee3" target="_blank">Github</a></li>
+				<li><a href="https://www.linkedin.com/in/drklee" target="_blank">LinkedIn</a></li>
+			</ul>
 		</div>
-		<div class="columns">
-			<div class="column col-4 col-sm-12" v-for="proj in projects">
-				<div class="card">
-					<div class="card-header">
-						<h4 class="card-title">{{ proj.title }}</h4>
-					</div>
-					<div class="card-body">{{ proj.description }}</div>
-					<div class="card-footer">
-						<a v-bind:href="value" v-for="(value, key) in proj.links"
-						class="btn btn-sm" v-bind:class="{ 'btn-primary': isGithub(key) }"
-						target="_blank">{{ key }}</a>
-					</div>
-				</div>
-			</div>
+		<div>
+			<h4 class="spaced">Skills and Experience</h4>
+			<ul class="subtitle">
+				<li>JavaScript</li>
+				<li>Node.js</li>
+				<li>Vue.js</li>
+				<li>Python</li>
+				<li>C++</li>
+				<li>Adobe After Effects</li>
+				<li>Adobe Photoshop</li>
+			</ul>
+			<h4 class="spaced">Projects</h4>
+			<ul>
+				<li><a href="https://github.com/drklee3/nuxt-yt" target="_blank">nuxt-yt</a></li>
+				<li><a href="https://github.com/jonfung/headphone-recommender" target="_blank">headphone-recommender</a></li>
+				<li><a href="https://github.com/drklee3/vlive-dl" target="_blank">vlive-dl</a></li>
+				<li><a href="https://github.com/drklee3/3dAC" target="_blank">3D Audio Converter</a></li>
+				<li><a href="https://github.com/drklee3/ApliaTotalGrade" target="_blank">ApliaTotalGrade</a></li>
+			</ul>
 		</div>
 	</div>
-<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
