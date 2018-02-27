@@ -1,0 +1,72 @@
+\documentclass{res} 
+
+\usepackage{pifont}
+\usepackage{multicol}
+\newsectionwidth{0pt}  
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{24pt}
+\setlength{\headsep}{24pt}
+\pagestyle{fancy}
+\cfoot{}
+\topmargin=-0.6in
+
+\begin{document}
+	\thispagestyle{empty} % no header
+	{\bf \LARGE{Derrick Lee}} \hfill {(408) 823-7288 | dlee3@scu.edu} \\
+	\hspace*{\fill} {linkedin.com/in/drklee | github.com/drklee3} \\
+	\hspace*{\fill} {drklee.me}
+	\noindent\rule{\textwidth}{1pt}
+	\begin{resume}
+
+		\section{EDUCATION}
+
+		{\sl Bachelor of Science}, Computer Science \hfill \emph{September 2016 - June 2020 (Expected)} \\
+			{\bf Santa Clara University}
+
+			Relevant Coursework:
+			\begin{multicols}{2}
+			\begin{itemize} \itemsep -2pt
+				\item Intro to Computer Science
+				\item Object Oriented Programming
+				\item Data Structures
+				\item Intro to Embedded Systems
+			\end{itemize}
+			\end{multicols}
+		
+		\section{RELEVANT SKILLS}
+		\vspace{6pt}
+
+			{\bf Languages:} JavaScript, Rust, Python, C++, HTML5, CSS, ARM Assembly, SQL \\
+			{\bf Related Technologies:} Node.js, Express, Koa, Vue.js, Next.js, React, jQuery
+
+		\section{PROJECTS} 
+		\vspace{6pt}
+
+		{\bf sushii-bot} \emph{https://github.com/drklee3/sushii-bot} \hfill \emph{December 2017 - Present} \\
+			A Discord chat bot with a ranking system, activity tracker, moderation tools, and more. \\
+			Written in {\bf Rust} with a {\bf PostgreSQL} database, {\bf diesel-rs} ORM, and connection pooling with {\bf r2d2-diesel}.
+			Paired a website made with {\bf Next.js}, {\bf React}, and {\bf Koa}.
+
+		{\bf nuxt-yt} \emph{https://github.com/drklee3/nuxt-yt} \hfill \emph{June 2017 - September 2017} \\
+			Web app that automatically updates, aggregates, and tags YouTube videos based on certain criteria utilizing the YouTube Data API.
+			Features include a search and video statistics.  Uses {\bf Node.js} and {\bf Express} web framework, {\bf Nuxt.js} for server side 
+			UI rendering, {\bf Vue.js} for frontend, and {\bf SQLite} for storing video data.
+
+		{\bf headphone-recommender} \hfill \emph{June 2017 - July 2017} \\
+			Web app that analyzes MP3 files and recommends 100+ headphones based on price, 
+			form factor, and music sound signature using {\bf Python} and the {\bf Flask} web framework.
+		
+		{\bf gifgif} \hfill \emph{December 2016} \\
+			{\bf Electron} application that trims, crops, and converts videos to gifs with {\bf Node.js} and FFmpeg.
+			Provides an HTML5 video preview and frame by frame seeking.
+
+		\section{AWARDS}
+		\vspace{6pt}
+
+		{\bf City of Cupertino "Solve the Streets" Challenge Winner} \hfill \emph{January 2016} \\
+			Analyzed the traffic situation in the Silicon Valley and created a video addressing local traffic problems
+			and proposing realistic and effective ways of improving transportation.  Video edited and animated with Adobe After Effects.
+
+	\end{resume} 
+\end{document}
