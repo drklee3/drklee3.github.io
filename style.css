@@ -15,12 +15,8 @@ h1,h2 {
   font-weight: 300;
 }
 
-h3,h4,h5 {
- font-weight: 200;
-}
-
 .subtitle {
-  opacity: .7;
+  margin-top: 0px;
 }
 
 p, li {
@@ -29,15 +25,14 @@ p, li {
 
 a {
   text-decoration: none;
-  color: #acd6ff;
-  opacity: .8;
-  padding: 0 5px 0 5px;
+  color: #d7eefd;
+  padding: 0 5px 2px 5px;
   transition: all .01s ease-out;
 }
 
 a:hover {
   opacity: 1;
-  background-color: #acd6ff;
+  background-color: #d7eefd;
   color: #000000;
   background-position: 100px 0px;
 }
@@ -46,27 +41,37 @@ a:hover {
 .spaced {
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 
 .content {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  max-width: 960px;
-  padding-top: 200px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-.container > div {
-  max-width: 100%;
-  min-width: 250px;
-  padding: 20px;
-  flex: 1;
+.card {
+  margin: 0px 20px 100px 20px;
+  border: 1px solid #d7eefd;
+  padding: 30px 30px 30px 30px;
+  border-radius: 5px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 ul {
