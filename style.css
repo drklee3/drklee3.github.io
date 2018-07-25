@@ -5,7 +5,7 @@ body {
  background-attachment: fixed;
  background-size: cover;
  height: 100vh;
- color: #ffffff;
+ color: #FFF;
  line-height:1;
  margin:0;
  padding:0
@@ -15,14 +15,16 @@ h1,h2,h3,h4,h5 {
   font-weight: 300;
 }
 
-.subtitle {
-  margin-top: 25px;
-  opacity: 0.8;
+hr {
+  margin: 25px 0 25px 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
 }
 
 .about {
-  margin-top: 0px;
-  line-height: 20px;
+  margin-top: 15px;
+  line-height: 24px;
 }
 
 p, li {
@@ -31,9 +33,9 @@ p, li {
 
 a {
   text-decoration: none;
-  color: #a1c7ff;
+  color: #A1C7FF;
   padding: 2px 5px 4px 5px;
-  background-image: linear-gradient(to right, #a1c7ff, #a1c7ff);
+  background-image: linear-gradient(to right, #A1C7FF, #A1C7FF);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: 100% 5%;
@@ -49,6 +51,7 @@ a:hover {
 .spaced {
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 5px;
 }
 
@@ -78,6 +81,7 @@ a:hover {
 .links {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 
 .bullet {
