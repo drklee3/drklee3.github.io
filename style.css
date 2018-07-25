@@ -73,9 +73,15 @@ a:hover {
 
 .card {
   margin: 0px 20px 100px 20px;
-  border: 1px solid rgba(216, 238, 252, 0.3);
   padding: 30px 30px 30px 30px;
+  border: 1px solid rgba(216, 238, 252, 0.3);
   border-radius: 5px;
+  background: none;
+  transition: all .2s ease-out;
+}
+
+.card:hover {
+  background-color: rgba(216, 238, 252, 0.02);
 }
 
 .links {
