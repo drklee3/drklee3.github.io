@@ -34,6 +34,9 @@ p, li {
 a {
   text-decoration: none;
   color: #A1C7FF;
+}
+
+.button {
   padding: 2px 5px 4px 5px;
   background-image: linear-gradient(to right, #A1C7FF, #A1C7FF);
   background-repeat: no-repeat;
@@ -42,7 +45,7 @@ a {
   transition: all .05s ease-out;
 }
 
-a:hover {
+.button:hover {
   opacity: 1;
   color: #000000;
   background-size: 100% 100%;
