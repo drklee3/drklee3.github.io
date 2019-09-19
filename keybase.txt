@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/drklee3
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dlee.dev
+  * I am drklee3 (https://keybase.io/drklee3) on keybase.
+  * I have a public key ASB3jukz9b4EzCNaNpSdezX4A4MJkdTsFNoMmGzWzBLQsgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012068a979c78d0134473b5991e02f2d82b828a4d6b220f053545edb514723dfa28d0a",
+      "host": "keybase.io",
+      "kid": "0120778ee933f5be04cc235a36949d7b35f803830991d4ec14da0c986cd6cc12d0b20a",
+      "uid": "ed20031bd6b99bdb2e53091507633019",
+      "username": "drklee3"
+    },
+    "merkle_root": {
+      "ctime": 1568247435,
+      "hash": "77f60d1b0920add1a0e928c665ca33b274e828b4ed8cee34487f2f6839f132446fc5973ade963308117579f744030973a701b7855ded48c5e7036d463e130fb2",
+      "hash_meta": "b755a8f09e4dbe83e2756b9cde191f63ededc9675ab566542d39add78703b437",
+      "seqno": 6845709
+    },
+    "service": {
+      "entropy": "3aAthEYHyNuJjB2LDVran7U8",
+      "hostname": "dlee.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.4.1"
+  },
+  "ctime": 1568247438,
+  "expire_in": 504576000,
+  "prev": "595c844bc1e67b5a4392872089cab7f17945ff4bfa21f0d8e2df636867bf1dad",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgd47pM/W+BMwjWjaUnXs1+AODCZHU7BTaDJhs1swS0LIKp3BheWxvYWTESpcCD8QgWVyES8Hme1pDkocgicq38XlF/0v6IfDY4t9jaGe/Ha3EIH4/tjlaBBIiuaSzyPmG/sGNL+xJ8o9QQJGj+R9H9bCbAgHCo3NpZ8RANgRYv4lEflvZx2cH+QBU2hJuf9xBtfuLuls79obWHA1LaNQCZt1fa4qR9mdt+dAGbu4vRV2yxGu/jRZIJDtNAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIGjRqLtbNEseAG1cKoUrNPJUfXKuU+RrBEjGYqesarl/o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/drklee3
+
+==================================================================
