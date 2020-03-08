@@ -36,7 +36,6 @@ p, li {
 
 a {
     text-decoration: none;
-    color: #fff;
 }
 
 .button {
@@ -46,6 +45,11 @@ a {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
+    color: #b0b0c4;
+}
+
+.button:hover {
+    color: #fff;
 }
 
 .button::before {
