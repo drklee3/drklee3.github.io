@@ -58,13 +58,14 @@ a {
     width: 0;
     height: 1px;
     bottom: 1px;
-    left: 0;
+    right: 0;
     background: linear-gradient(135deg, #005bea 0%, #00c6fb 100%);
     transition: width .2s ease;
 }
 
 .button:hover::before, .button.active::before {
     width: 100%;
+    left: 0;
 }
 
 .spaced {
